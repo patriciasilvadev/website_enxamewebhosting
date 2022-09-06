@@ -1,0 +1,26 @@
+/* globais */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../font/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'TyptIcons';
+    src: url('../font/Type\ Icons\ Color.ttf');
+}
+body {
+    font-family: 'OpenSans';
+}
+h1 {
+    font-size: 52px;
+}
+h2 {
+    font-size: 38px;
+}
+p {
+    font-size: 16px;
+}
+a {
+    font-size: 16px;
+    transition: .5s;
+    text-transform: capitalize;
+}
