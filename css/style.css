@@ -10,21 +10,37 @@
 body {
     font-family: 'OpenSans';
 }
+
+/* unidades de referencia*/
+html {
+    font-size: 20px;
+}
+div {
+    font-size: 10px;
+}
 h1 {
-    font-size: 52px;
+    font-size: 6.2em;
 }
 h2 {
-    font-size: 38px;
+    font-size: 5em;
+}
+h3 {
+    font-size: 3.8em;
+}
+h4 {
+    font-size: 2.6em;
 }
 p {
-    font-size: 16px;
+    font-size: 1.6em;
 }
 a {
-    font-size: 16px;
+    font-size: 1.8em;
     transition: .5s;
     text-transform: capitalize;
 }
-
+section {
+    padding-top: 70px ;
+}
 
 
 /* estilizando a barra de navegação */
@@ -35,17 +51,58 @@ a {
     background-color: #333;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 .logo {
     height: 50px;
     padding: 10px 20px;
-    filter: invert(50%);
+    filter: invert(100%);
 }
 .menuLinks {
     display: flex;
-    flex-direction: row;
-    gap: 0 20px;
-    
+    flex-direction: row;    
+}
+.menu li a {
+    padding: 24px;
+    color: white;
+    margin-left: 10px;
+}
+.menu li a:hover {
+    background-color: white;
+    color: #333;
+}
+.btnDefault {
+    background-color: DeepSkyBlue;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+
+
+/* estilizando a seção Home */
+#home {
+    background-image: url('../img/img3.png') ;
+    background-size:  cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.homeContainer {
+    padding: 30em 2em;
+    text-align: center;
+    color: white;
+}
+.homeContainer h1 {
+    font-size: 5rem; 
+}
+.homeContainer h1 span {
+    font-size: 2.5rem;
+}
+.homeContainer h2 {
+    margin-top: 50px;
+}
+.homeContainer h2 span {
+    background-color: slateblue;
+    padding: 0 10px;
+    font-weight: 900;
 }
