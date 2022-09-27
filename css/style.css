@@ -7,7 +7,7 @@
     font-family: 'TyptIcons';
     src: url('../font/Type\ Icons\ Color.ttf');
 }
-body {
+body, textarea {
     font-family: 'OpenSans';
 }
 
@@ -183,6 +183,7 @@ section {
 
 
 
+
 /*#region sectionProducts*/
 /* Effect parallax  - formatting background */
 #products {
@@ -270,6 +271,7 @@ section {
     text-align: center;
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
 }
 .servicesItems {
     width: 50%;
@@ -289,6 +291,18 @@ section {
 .servicesItems table tr td {
     font-size: 1.5em;
 }
+.servicesItems table tr td a {
+    font-size: 1em;
+}
+/* even line */
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+/* odd line */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
 
 /*#endregion sectionServices*/
 
@@ -297,6 +311,40 @@ section {
 
 
 /*#region sectionDomain*/
+/* Effect parallax  - formatting background */
+#domain {
+    background-image: url('../img/img2.png') ;
+    background-size:  cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding: 30em 0;
+}
+#domain h2 {
+    background-color: dodgerblue;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.domainContainer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.domainContainer li {
+    height: 100px;
+    line-height: 100px;
+}
+.domainContainer li input[type=text] {
+    background-color: rgba(255, 255, 255, .8);
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
 /*#endregion sectionDomain*/
 
 
@@ -304,11 +352,54 @@ section {
 
 
 /*#region sectionLocalization*/
+#localization {
+    text-align: center; 
+}
+#localization h2 {
+    padding-bottom: 50px;
+}
+.localizationContainer {
+    padding: 5em 0;
+}
+
 /*#endregion sectionLocalization*/
 
 
 
 
 /*#region sectionContact*/
+#contact {
+    background-color: rgb(17, 16, 29);
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 20em 0;
+    text-align: center;
+}
+.contactContainer {
+    width: 60%;
+    margin: 0 auto;
+
+}
+.contactItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactItems li {
+    padding: 10px;
+}
+.contactItems li input[type=text],
+.contactItems li input[type=email],
+.contactItems li input[type=password],
+.contactItems textarea {
+    background-color: white;
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
 /*#endregion sectionContact*/
 
