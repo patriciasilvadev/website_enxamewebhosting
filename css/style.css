@@ -41,6 +41,7 @@ a {
     font-size: 1.8em;
     transition: .5s;
     text-transform: capitalize;
+    color: white;
 }
 section {
     padding-top: 70px ;
@@ -81,9 +82,10 @@ section {
     color: #333;
 }
 .btnDefault {
-    background-color: DeepSkyBlue;
+    background-color: dodgerblue;
     padding: 10px 20px !important;
     border-radius: 5px;
+    border: none;
     margin-right: 20px;
     color: white;
     margin: 0 auto;
@@ -369,7 +371,7 @@ tr:nth-child(odd) {
 
 /*#region sectionContact*/
 #contact {
-    background-color: rgb(17, 16, 29);
+    background-color: black;
     color: white;
     width: 100%;
     height: auto;
@@ -379,7 +381,6 @@ tr:nth-child(odd) {
 .contactContainer {
     width: 60%;
     margin: 0 auto;
-
 }
 .contactItems {
     display: flex;
@@ -400,6 +401,47 @@ tr:nth-child(odd) {
     border: none;
     border-radius: 8px;
 }
+.contactItems li span {
+    font-size: 2em;
+}
+.contactItems li input[type=submit],
+.contactItems li input[type=reset] {
+    padding: 20px !important;
+    font-size: 2em;
+    margin: 20px;
+}
 
 /*#endregion sectionContact*/
 
+
+
+/*#region footer*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerContainer li {
+    height: 30px;
+    line-height: 30px;
+    opacity: .6;
+    transition: .3s;
+}
+.footerContainer li:hover {
+    opacity: 1;
+    transition: .3s;
+}
+.footerContainer a i,
+.footerContainer a span,
+.footerContainer h5 {
+    opacity: .6;
+}
+
+/*#endregion footer*/

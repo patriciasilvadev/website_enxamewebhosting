@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="media.css">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <title>Enxame Web Hosting</title>
-</head>
+    <head>
+        <!-- Metados -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Links -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">    
+        <link rel="stylesheet" href="css/media.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>    
+        <!-- Icone e Titulo da Página -->
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <title>Enxame Web Hosting - Login</title>
+    </head>
 <body>
-    
+    <div class="container">
+        <!-- barra de navegação -->
+       <nav>
+           <div class="menu">
+               <img src="img/logo.png" alt="logo" class="logo">
+               <ul class="menuLinks">
+                   <li><a href="index.html#home">home</a></li>
+                   <li><a href="index.html#specialties">specialties</a></li>
+                   <li><a href="index.html#products">products</a></li>
+                   <li><a href="index.html#services">services</a></li>
+                   <li><a href="index.html#domain">domain</a></li>
+                   <li><a href="index.html#localization">localization</a></li>
+                   <li><a href="index.html#contact">contact</a></li>
+               </ul>
+           </div>
+       </nav>
+       <!-- Contact -->
+       <section id="contact">
+            <h2>Login</h2>
+            <div class="contactContainer">
+                <ul class="contactItems">
+                    <li><input type="text" placeholder="Nome:" autocomplete="off" required></li>
+                    <li><input type="password" placeholder="Senha:" maxlength="6" autocomplete="off" required></li>
+                    <li>
+                        <input type="submit" value="Submit" class="btnDefault">
+                        <input type="reset" value="Cancel" class="btnDefault">
+                    </li>
+                    <li><a>Forgot my password</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="footerContainer">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specialties">Specialties</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#domain">Domain</a></li>
+                    <li><a href="#localization">Localization</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <a href="#home" >
+                    <i class="bx bxs-invader"></i>
+                    <span>Enxame</span>
+                </a>
+                <h5>&copy; Copyright Enxame 2012</h5>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
