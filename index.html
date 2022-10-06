@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">    
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.min.css">    
+    <link rel="stylesheet" href="css/media.min.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 
@@ -269,11 +269,15 @@
            <section id="contact">
                <h2>Contact</h2>
                <div class="contactContainer">
+
+                <!-- 1 - adiciona o metodo post -->
+                <form action="https://api.staticforms.xyz/submit" method="post">
+
                    <ul class="contactItems">
-                       <li><input type="text" placeholder="Nome:" autocomplete="off" required></li>
-                       <li><input type="email" placeholder="E-mail:" autocomplete="off" required></li>
+                       <li><input type="text" name="name" placeholder="Nome:" autocomplete="off" required></li>
+                       <li><input type="email" name="email" placeholder="E-mail:" autocomplete="off" required></li>
                        <li>
-                           <textarea cols="30" rows="10" placeholder="Send your message"></textarea>
+                           <textarea cols="30" rows="10" name="message" placeholder="Send your message"></textarea>
                         </li>
                        <li>
                            <input type="submit" value="Submit" class="btnDefault">
@@ -281,6 +285,14 @@
                        </li>
                        <li><input type="checkbox"><span>I want to recive junk in my email</span></li>
                    </ul>
+
+                   <!-- 2 - aplica a chave -->
+                   <input type="hidden" name="accessKey" value="9c943cc6-9871-467f-a938-09b4cfb54d2b">
+
+                   <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/tanks.html">
+
+                </form>
+
                </div>
            </section>
        </main>
